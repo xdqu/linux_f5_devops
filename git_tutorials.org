@@ -501,5 +501,27 @@ Git是分布式版本控制系统，同一个Git仓库，可以分布到不同�
 
 *** 添加远程库
 *** 克隆远程数据库
+git clone https://github.com/XiangdongQu/linux_f5_devops.git /var/tmp/git_www.liaoxuefeng.com
+
 https://backlog.com/git-tutorial/cn/intro/intro4_3.html
-1057  git clone https://github.com/XiangdongQu/linux_f5_devops.git /var/tmp/git_www.liaoxuefeng.com
+
+
+[xdqu@rhel8 git_www.liaoxuefeng.com]$ git push -u origin master
+Username for 'https://github.com': XiangdongQu
+Password for 'https://XiangdongQu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/XiangdongQu/linux_f5_devops.git/'
+[xdqu@rhel8 git_www.liaoxuefeng.com]$ git push -u origin master
+Username for 'https://github.com': XiangdongQu
+Password for 'https://XiangdongQu@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 476 bytes | 476.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/XiangdongQu/linux_f5_devops.git
+   4543866..a82827f  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
