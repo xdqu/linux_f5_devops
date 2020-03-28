@@ -500,5 +500,6 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 Git是分布式版本控制系统，同一个Git仓库，可以分布到不同的机器上。怎么分布呢？最早，肯定只有一台机器有一个原始版本库，此后，别的机器可以“克隆”这个原始版本库，而且每台机器的版本库其实都是一样的，并没有主次之分。
 
 *** 添加远程库
-
-   
+*** 克隆远程数据库
+https://backlog.com/git-tutorial/cn/intro/intro4_3.html
+1057  git clone https://github.com/XiangdongQu/linux_f5_devops.git /var/tmp/git_www.liaoxuefeng.com
