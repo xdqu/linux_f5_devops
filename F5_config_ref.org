@@ -1,0 +1,24 @@
+* F5 Configuration files commands 
+** configuration files:
+	/config/bigip.conf
+		- virtual servers, pools, floating self IPs, SNATs, monitors
+	/config/bigip_base.conf
+		- VLANs, interfaces, non-floating self IPs
+	/config/BigDB.date
+		- system settings like network failover
+
+** save, load, list
+      tmsh save config -- store running configurations to disk
+      tmsh list config -- view running configurations from RAM/memory
+      tmsh load config -- load stored configurations from hard disk to RAM/memory
+
+** tmsh keyboard map
+	 - Ctrl + C	cancels the current commands
+	 - Ctrl + E	moves cursor to the end of the line
+	 - Ctrl + G	clears all characters from line
+	 - Ctrl + K	delete from curor to end of line
+	 - Ctrl + L	clears screen but not the line
+	 - Esc 	+ U	changes word to uppercase
+	 - Up arrow	scroll up through command history
+	 - Down arrow	scrolls down through command history
+
