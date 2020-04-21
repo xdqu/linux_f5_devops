@@ -1,0 +1,11 @@
+* Infrastructure Preparation
+** Postman
+How to install Postman on openSUSE using snaps (Snaps are applications packaged with all their dependencies to run on all popular Linux distributions from a single build. They update automatically and roll back gracefully.)
+https://snapcraft.io/install/postman/opensuse
+
+Only worked in LMDE4Debbie
+
+*** This works using https://www.postman.com/downloads/
+
+https://morioh.com/p/e256fd7a2811
+
