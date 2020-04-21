@@ -9,3 +9,10 @@ Only worked in LMDE4Debbie
 
 https://morioh.com/p/e256fd7a2811
 
+
+
+** git
+*** keep getting a 'Permission Denied (publickey)' error when clone/push
+https://gist.github.com/adamjohnson/5682757
+NOTE: Your SSH keys must be named id_rsa and id_rsa.pub in order for Git, GitHub, and BitBucket to recognize them by default.
+
