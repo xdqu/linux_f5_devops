@@ -1,0 +1,25 @@
+https://easyengine.io/tutorials/linux/gpg-keys/
+
+https://www.howtogeek.com/427982/how-to-encrypt-and-decrypt-files-with-gpg-on-linux/
+How To Export Share Public Key
+To share your key as a file, we need to export it from the gpg local key store. To do this, we’ll use the --export option, which must be followed by the email address that you used to generate the key. The --output option must be followed by the name fo the file you wish to have the key exported into. The --armor option tells gpg to generate ASCII armor output instead of a binary file.
+
+For example: 
+gpg2 --output /var/tmp/GPG2_filename.key --armor --export <email address>
+
+
+How To Encrypting Files
+The --encrypt option tells gpg to encrypt the file, and the --sign option tells it to sign the file with your details. The --armor option tells gpg to create an ASCII file. The -r (recipient) option must be followed by the email address of the person you’re sending the file to.
+
+For example:
+gpg2 --encrypt --sign --armor /var/tmp/gpg2_test.txt -r <recipient email address>
+gpg --encrypt --sign --armor /var/tmp/gpg2_test.txt -r <recipient email address>
+
+
+How To Decrypting Files
+
+We can decrypt it very easily using the --decrypt option. We are going to redirect the output into another file called gpg2_test_plain.txt.
+
+Note that we don’t have to tell gpg who the file is from. It can work that out from the encrypted contents of the file.
+
+gpg2 --decrypt /var/tmp/gpg2_test.txt.asc > /var/tmp/gpg2_test_plain.txt
